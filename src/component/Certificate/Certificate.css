@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,700&display=swap" rel="stylesheet');
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #ffffff;
+    --main-color: linear-gradient(270deg, #ef1919 50%, #ffff 50% );
+  }
+.certificate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.certificate-title{
+    position: relative;
+}
+.certificate-title h1{
+    padding: 0 30px;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.certificate-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.certificate-container img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.certificate-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid var(--main-color);
+}
+.certificate-container h2{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.certificate-container p{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 500;
+}
+@media(max-width: 768px){
+    .certificate{
+        margin: 50px 70px;
+    }
+    .certificate-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+}

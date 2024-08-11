@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,700&display=swap" rel="stylesheet');
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #ffffff;
+    --main-color: linear-gradient(270deg, #ef1919 50%, #ffff 50% );
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.hero img{
+    margin-top: 100px;
+    width: 300px;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 80px;
+    font-weight: 600;
+}
+.hero h1 span{
+    background: var(--main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.hero p{
+    text-align: center;
+    width: 50%;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.resume a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    background: var(--main-color);
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 700; 
+    transition: 0.5s ease;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.resume a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--text-color);
+}
+
+@media(max-width: 768px) {
+    .hero img{
+        margin-bottom: 70px;
+        width: 300px;
+
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+    .hero p{
+        width: 60%;
+        font-size: 28px;
+        line-height: 32px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+}

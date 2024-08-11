@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,700&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'poppins', 'sans-serif';
+}
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #ffffff;
+  --main-color: linear-gradient(to bottom, #ef1919 50%, #ffff 50% );
+}
+body{
+  height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
