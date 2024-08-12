@@ -31,7 +31,7 @@ const Navbar = () =>
                 <li><AnchorLink className='anchor-link' offset={50} href='#project'><p onClick={()=>setMenu("project")}>Project</p></AnchorLink>{menu==='project'?<img src={underline} alt="" />:<></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu==='contact'?<img src={underline} alt="" />:<></>}</li>
             </ul>
-            <div className="nav-connect"><a href="https://www.linkedin.com/in/gilangharsya/">Connect</a></div>
+            <div className="nav-connect"><a href="https://www.linkedin.com/in/gilangharsya/">CONNECT ME</a></div>
         </div>
     )
 }
